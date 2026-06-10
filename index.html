@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Niraj Narkhede — Web UI Developer with 10+ years of expertise in HTML, CSS, JavaScript, web performance, and accessibility.">
+  <meta name="author" content="Niraj Narkhede">
+  <title>Niraj Narkhede — Web UI Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <!-- Decorative scroll shapes -->
+  <div class="shapes" aria-hidden="true">
+    <div class="scroll-progress"></div>
+    <div class="shape shape--circle"></div>
+    <div class="shape shape--triangle">
+      <svg viewBox="0 0 200 200" fill="none" aria-hidden="true">
+        <polygon points="100,24 28,176 172,176" stroke="currentColor" stroke-width="1"/>
+        <polygon points="100,58 58,158 142,158" stroke="currentColor" stroke-width="1"/>
+      </svg>
+    </div>
+    <div class="shape shape--square"></div>
+    <div class="shape shape--diamond"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Niraj Narkhede<span class="nav__logo-dot">.</span></a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#process" class="nav__link">Process</a></li>
+        <li><a href="#work" class="nav__link">Work</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#blog" class="nav__link">Blog</a></li>
+        <li><a href="#drums" class="nav__link">Drums</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__label reveal">Web UI Developer · 10+ Years</p>
+          <h1 class="hero__title reveal">
+            Hi, I'm Niraj !<br>
+            <em>I craft high-performance UI</em>
+          </h1>
+          <p class="hero__desc reveal">
+            Senior Web developer specializing in semantic HTML, modern CSS, and
+            JavaScript — building accessible, fast, and pixel-perfect interfaces
+            that scale across browsers and devices.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#work" class="btn btn--primary">View My Work</a>
+            <a href="#contact" class="btn btn--outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="hero__canvas" id="hero-canvas">
+
+            <div class="hero__mesh" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <div class="hero__ring" aria-hidden="true">
+              <svg viewBox="0 0 200 200" fill="none">
+                <circle cx="100" cy="100" r="96" stroke="currentColor" stroke-width="1" stroke-dasharray="8 12"/>
+              </svg>
+            </div>
+
+            <span class="hero__corner hero__corner--tl" aria-hidden="true"></span>
+            <span class="hero__corner hero__corner--tr" aria-hidden="true"></span>
+            <span class="hero__corner hero__corner--bl" aria-hidden="true"></span>
+            <span class="hero__corner hero__corner--br" aria-hidden="true"></span>
+
+            <div class="hero__orbit" aria-hidden="true">
+              <div class="hero__orbit-arm hero__orbit-arm--1"><span class="hero__orbit-item"></span></div>
+              <div class="hero__orbit-arm hero__orbit-arm--2"><span class="hero__orbit-item"></span></div>
+              <div class="hero__orbit-arm hero__orbit-arm--3"><span class="hero__orbit-item"></span></div>
+            </div>
+
+            <div class="hero__ui-card" aria-hidden="true">
+              <div class="hero__ui-card-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="hero__ui-card-body">
+                <span class="hero__ui-line hero__ui-line--long"></span>
+                <span class="hero__ui-line"></span>
+                <span class="hero__ui-line hero__ui-line--short"></span>
+                <span class="hero__ui-btn"></span>
+              </div>
+            </div>
+
+            <div class="hero__window">
+              <div class="hero__window-bar">
+                <span class="hero__window-dot"></span>
+                <span class="hero__window-dot"></span>
+                <span class="hero__window-dot"></span>
+                <span class="hero__window-title">niraj.js</span>
+              </div>
+              <div class="hero__code">
+                <div class="hero__code-line">
+                  <span class="hero__code-num">1</span>
+                  <span class="hero__code-kw">const</span> developer = {
+                </div>
+                <div class="hero__code-line">
+                  <span class="hero__code-num">2</span>
+                  &nbsp;&nbsp;name: <span class="hero__code-str">"Niraj Narkhede"</span>,
+                </div>
+                <div class="hero__code-line">
+                  <span class="hero__code-num">3</span>
+                  &nbsp;&nbsp;exp: <span class="hero__code-str">"10+ years"</span>,
+                </div>
+                <div class="hero__code-line">
+                  <span class="hero__code-num">4</span>
+                  &nbsp;&nbsp;focus: [<span class="hero__code-str">"HTML"</span>, <span class="hero__code-str">"CSS"</span>, <span class="hero__code-str">"JS"</span>]
+                </div>
+                <div class="hero__code-line">
+                  <span class="hero__code-num">4</span>
+                  &nbsp;&nbsp;Position: [<span class="hero__code-str">"Web Developer"</span>]
+                </div>
+                <div class="hero__code-line">
+                  <span class="hero__code-num">6</span>
+                  };
+                </div>
+                <div class="hero__code-line hero__code-line--cursor">
+                  <span class="hero__code-num">7</span>
+                  <span class="hero__code-cursor">|</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__tag hero__tag--1">HTML</div>
+            <div class="hero__tag hero__tag--2">CSS</div>
+            <div class="hero__tag hero__tag--3">JS</div>
+            <div class="hero__tag hero__tag--4">a11y</div>
+
+            <div class="hero__pulse" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">01</span>
+          <h2 class="section__title">About Me</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p class="about__lead">
+              I'm Niraj Narkhede — a <span class="white-text">Web UI Developer</span> with over a decade of
+              experience turning complex requirements into clean, accessible,
+              and high-performing web interfaces.
+            </p>
+            <p>
+              My foundation is built on semantic HTML, advanced CSS, and
+              vanilla JavaScript. I ship production-ready UI that is responsive,
+              cross-browser tested, and optimized for <span class="white-text">Core Web Vitals</span> — without
+              sacrificing design fidelity.
+            </p>
+            <p>
+              I care deeply about <span class="white-text">web accessibility (WCAG)</span> and <span class="white-text">web performance</span>.
+              From keyboard navigation and screen reader support to lazy loading,
+              critical CSS, and render optimization — I build interfaces that
+              work for everyone, on every device, at speed.
+            </p>
+            <p>
+              Based in Pune, India, I work as a Senior Web UI Developer and technical
+              writer — sharing frontend knowledge through articles on
+              <a href="https://dev.to/nnnirajn" target="_blank" rel="noopener noreferrer">DEV Community</a>.
+            </p>
+          </div>
+          <div class="about__stats reveal">
+            <div class="stat">
+              <span class="stat__number" data-count="10" data-suffix="+">0+</span>
+              <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-count="80" data-suffix="+">0+</span>
+              <span class="stat__label">Projects Delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-count="20" data-suffix="+">0+</span>
+              <span class="stat__label">Articles Published</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-count="68" data-suffix="+">0+</span>
+              <span class="stat__label">GitHub Repositories</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-count="50" data-suffix="+">0+</span>
+              <span class="stat__label">Accessible UIs Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-count="11" data-suffix="+">0+</span>
+              <span class="stat__label">Certs &amp; Awards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">02</span>
+          <h2 class="section__title">Skills &amp; Tools</h2>
+        </div>
+        <div class="skills__grid">
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            </div>
+            <h3>HTML &amp; CSS</h3>
+            <p>Semantic markup, Flexbox, Grid, CSS animations, Sass, Tailwind, responsive architecture, and component-driven styling at scale.</p>
+            <ul class="skill-card__tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Sass</li>
+              <li>Tailwind</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>JavaScript</h3>
+            <p>ES6+, DOM APIs, event-driven UI, fetch patterns, modular code, and animation libraries including GSAP.</p>
+            <ul class="skill-card__tags">
+              <li>ES6+</li>
+              <li>Animation Libraries</li>
+              <li>GSAP</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3>Web Performance</h3>
+            <p>Lighthouse audits, Core Web Vitals optimization, lazy loading, code splitting, image optimization, and critical rendering path improvements.</p>
+            <ul class="skill-card__tags">
+              <li>LCP</li>
+              <li>CLS</li>
+              <li>INP</li>
+              <li>Lighthouse</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>Accessibility &amp; UX</h3>
+            <p>WCAG 2.1 compliance, ARIA patterns, keyboard navigation, focus management, color contrast, and inclusive design practices.</p>
+            <ul class="skill-card__tags">
+              <li>WCAG</li>
+              <li>ARIA</li>
+              <li>UX</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process section section--light" id="process">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">03</span>
+          <h2 class="section__title">My Process</h2>
+        </div>
+        <p class="section__intro reveal">A code-first workflow refined over 10+ years — turning specs and mockups into production-ready UI with performance and accessibility built in from day one.</p>
+        <div class="process__scratch" id="process-scratch">
+          <div class="process__scratch-content">
+            <div class="process__grid">
+              <div class="process__step">
+                <span class="process__step-num">01</span>
+                <h3>Discover</h3>
+                <p>Review project specs, user flows, and acceptance criteria. Define accessibility standards (WCAG) and performance budgets before any code is written.</p>
+              </div>
+              <div class="process__step">
+                <span class="process__step-num">02</span>
+                <h3>Plan</h3>
+                <p>Break the interface into reusable components, map responsive breakpoints, and decide HTML structure, CSS architecture, and JS behavior upfront.</p>
+              </div>
+              <div class="process__step">
+                <span class="process__step-num">03</span>
+                <h3>Markup</h3>
+                <p>Build semantic, accessible HTML — proper landmarks, heading hierarchy, ARIA where needed, and keyboard-friendly structure from the ground up.</p>
+              </div>
+              <div class="process__step">
+                <span class="process__step-num">04</span>
+                <h3>Style &amp; Build</h3>
+                <p>Layer responsive CSS with Flexbox, Grid, and custom properties. Add JavaScript for interactions, animations, and dynamic UI — keeping code modular and maintainable.</p>
+              </div>
+              <div class="process__step">
+                <span class="process__step-num">05</span>
+                <h3>Test</h3>
+                <p>Run cross-browser QA, screen reader checks, WCAG audits, Lighthouse performance tests, and validate on real devices before handoff.</p>
+              </div>
+              <div class="process__step">
+                <span class="process__step-num">06</span>
+                <h3>Launch</h3>
+                <p>Deploy to production, monitor Core Web Vitals, track real-user metrics, and iterate on UI improvements based on feedback and data.</p>
+              </div>
+            </div>
+          </div>
+          <canvas class="process__scratch-canvas" id="process-scratch-canvas" aria-hidden="true"></canvas>
+          <div class="process__scratch-hint" id="process-scratch-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L14 8l6 1-4.5 4 1.5 6L12 16l-5 3 1.5-6L4 9l6-1z"/></svg>
+            <span>Scratch to reveal my process</span>
+          </div>
+          <div class="process__confetti" id="process-confetti" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="work section" id="work">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">04</span>
+          <h2 class="section__title">Selected Work</h2>
+        </div>
+        <div class="work__grid">
+
+          <article class="project">
+            <div class="project__image">
+              <div class="project__placeholder">
+                <span>01</span>
+              </div>
+            </div>
+            <div class="project__info">
+              <span class="project__category">Frontend Template</span>
+              <h3 class="project__title">Front-End Web Template</h3>
+              <p class="project__desc">A fully responsive website template built from scratch with semantic HTML, modern CSS Grid/Flexbox, and vanilla JavaScript interactions.</p>
+              <div class="project__tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <a href="https://github.com/nnnirajn/Front-Web-Development-Project-2" target="_blank" rel="noopener noreferrer" class="project__link">
+                View on GitHub
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__image">
+              <div class="project__placeholder">
+                <span>02</span>
+              </div>
+            </div>
+            <div class="project__info">
+              <span class="project__category">Landing Page</span>
+              <h3 class="project__title">Web Development Project 3</h3>
+              <p class="project__desc">Clean, conversion-focused landing page with mobile-first layout, CSS animations, and optimized asset loading for fast performance.</p>
+              <div class="project__tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive</span>
+              </div>
+              <a href="https://github.com/nnnirajn/Front-Web-Development-Project-3" target="_blank" rel="noopener noreferrer" class="project__link">
+                View on GitHub
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__image">
+              <div class="project__placeholder">
+                <span>03</span>
+              </div>
+            </div>
+            <div class="project__info">
+              <span class="project__category">React Component</span>
+              <h3 class="project__title">Responsive Navigation Bar</h3>
+              <p class="project__desc">Accessible React navigation with hamburger menu, keyboard support, focus trapping, and smooth mobile/desktop transitions.</p>
+              <div class="project__tech">
+                <span>React</span>
+                <span>CSS</span>
+                <span>a11y</span>
+              </div>
+              <a href="https://dev.to/nnnirajn/responsive-navigation-bar-in-react-with-a-hamburger-menu-1b5h" target="_blank" rel="noopener noreferrer" class="project__link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__image">
+              <div class="project__placeholder">
+                <span>04</span>
+              </div>
+            </div>
+            <div class="project__info">
+              <span class="project__category">Portfolio</span>
+              <h3 class="project__title">This Portfolio Site</h3>
+              <p class="project__desc">Black &amp; white portfolio with GSAP scroll animations, scratch-to-reveal interaction, Web Audio drum kit, and performance-first vanilla stack.</p>
+              <div class="project__tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>GSAP</span>
+              </div>
+              <a href="https://github.com/nnnirajn" target="_blank" rel="noopener noreferrer" class="project__link">
+                View GitHub
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__image">
+              <div class="project__placeholder">
+                <span>05</span>
+              </div>
+            </div>
+            <div class="project__info">
+              <span class="project__category">React / UI Library</span>
+              <h3 class="project__title">shadcn UI Component System</h3>
+              <p class="project__desc">End-to-end setup of a shadcn UI project — theme tokens, accessible primitives, reusable components, and a scalable design system in React.</p>
+              <div class="project__tech">
+                <span>React</span>
+                <span>shadcn</span>
+                <span>TypeScript</span>
+              </div>
+              <a href="https://dev.to/nnnirajn/complete-step-by-step-tutorials-on-shadcn-4dcb" target="_blank" rel="noopener noreferrer" class="project__link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__image">
+              <div class="project__placeholder">
+                <span>06</span>
+              </div>
+            </div>
+            <div class="project__info">
+              <span class="project__category">React Component</span>
+              <h3 class="project__title">React-Slick Image Carousel</h3>
+              <p class="project__desc">Responsive image slider with custom arrows, breakpoint-specific slides, lazy loading, and touch-friendly navigation for content-heavy pages.</p>
+              <div class="project__tech">
+                <span>React</span>
+                <span>CSS</span>
+                <span>Performance</span>
+              </div>
+              <a href="https://dev.to/nnnirajn/mastering-the-react-slick-slider-a-step-by-step-tutorial-16g5" target="_blank" rel="noopener noreferrer" class="project__link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__image">
+              <div class="project__placeholder">
+                <span>07</span>
+              </div>
+            </div>
+            <div class="project__info">
+              <span class="project__category">React / UX</span>
+              <h3 class="project__title">Drag &amp; Drop File Upload</h3>
+              <p class="project__desc">File upload interface built with React-Dropzone — drag-and-drop zones, file previews, validation states, and keyboard-accessible interactions.</p>
+              <div class="project__tech">
+                <span>React</span>
+                <span>a11y</span>
+                <span>UX</span>
+              </div>
+              <a href="https://dev.to/nnnirajn/how-to-use-react-dropzone-for-uploading-files-hm2" target="_blank" rel="noopener noreferrer" class="project__link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__image">
+              <div class="project__placeholder">
+                <span>08</span>
+              </div>
+            </div>
+            <div class="project__info">
+              <span class="project__category">Next.js App</span>
+              <h3 class="project__title">Next.js Project Starter</h3>
+              <p class="project__desc">Production-ready Next.js setup with routing, layout architecture, SEO via React-Helmet patterns, and performance-minded project structure.</p>
+              <div class="project__tech">
+                <span>Next.js</span>
+                <span>React</span>
+                <span>SEO</span>
+              </div>
+              <a href="https://dev.to/nnnirajn/step-by-step-tutorial-setting-up-a-nextjs-project-locally-for-beginners-4ep3" target="_blank" rel="noopener noreferrer" class="project__link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience section section--light" id="experience">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">05</span>
+          <h2 class="section__title">Experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <span class="timeline__year">2025 — Present</span>
+            <h3 class="timeline__role">Senior Web Developer</h3>
+            <span class="timeline__company">Granicus</span>
+            <p>Leading frontend development with semantic HTML, modern CSS, and responsive layouts. Managing CMS-driven content, enforcing WCAG accessibility standards, and optimizing web performance for production-grade government and public-sector platforms.</p>
+            <ul class="timeline__tags">
+              <li>HTML</li><li>CSS</li><li>CMS</li><li>WCAG</li><li>Performance</li>
+            </ul>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__year">2021 — 2025</span>
+            <h3 class="timeline__role">React UI Developer</h3>
+            <span class="timeline__company">Third Rock Techkno</span>
+            <p>Built and shipped production interfaces using HTML, CSS, React.js, and Next.js. Delivered server-rendered pages, reusable component libraries, and performance-optimized UI for client-facing web applications.</p>
+            <ul class="timeline__tags">
+              <li>React</li><li>Next.js</li><li>HTML</li><li>CSS</li>
+            </ul>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__year">2019 — 2021</span>
+            <h3 class="timeline__role">HTML Developer</h3>
+            <span class="timeline__company">Uplers</span>
+            <p>Developed responsive web interfaces with HTML, CSS, and JavaScript for international clients. Created CSS and JavaScript-driven animations, interactive UI components, and polished front-end experiences across diverse project requirements.</p>
+            <ul class="timeline__tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Animation</li>
+            </ul>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__year">Late 2017 — 2019</span>
+            <h3 class="timeline__role">UI Developer</h3>
+            <span class="timeline__company">Drawww Media</span>
+            <p>First professional role — built client websites with HTML, CSS, and jQuery. Integrated and customized WordPress backends, delivered pixel-accurate front-end implementations, and gained hands-on experience in full website delivery.</p>
+            <ul class="timeline__tags">
+              <li>HTML</li><li>CSS</li><li>jQuery</li><li>WordPress</li>
+            </ul>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__year">2016 — Late 2017</span>
+            <h3 class="timeline__role">Freelance Web Developer</h3>
+            <span class="timeline__company">Independent · Self-taught</span>
+            <p>After completing a B.E. in Electronics &amp; Telecommunication (EnTC) in 2016, began learning HTML and CSS by building websites from scratch. Took on freelance projects while sharpening front-end fundamentals and exploring modern web development practices.</p>
+            <ul class="timeline__tags">
+              <li>HTML</li><li>CSS</li><li>Freelance</li><li>Web Dev</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">06</span>
+          <h2 class="section__title">Testimonials</h2>
+        </div>
+        <p class="section__intro reveal">Trusted by teams for clean code, accessible UI, and reliable delivery.</p>
+        <div class="testimonials__grid">
+          <blockquote class="testimonial">
+            <p class="testimonial__quote">"Niraj's deep knowledge of HTML, CSS, and JavaScript is evident in every project. His attention to accessibility and performance sets him apart from typical frontend developers."</p>
+            <footer class="testimonial__author">
+              <div class="testimonial__avatar">PM</div>
+              <div>
+                <cite class="testimonial__name">Amit Chavhan </cite>
+                <span class="testimonial__role">Project Manager</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p class="testimonial__quote">"Delivered pixel-perfect React UI on tight deadlines. His technical blog posts on DEV have also helped our entire team level up their CSS and accessibility skills."</p>
+            <footer class="testimonial__author">
+              <div class="testimonial__avatar">TL</div>
+              <div>
+                <cite class="testimonial__name">Maharshi Mehta</cite>
+                <span class="testimonial__role">Tech Lead</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p class="testimonial__quote">"Rare combination of UI craftsmanship and performance mindset. Lighthouse scores improved significantly after Niraj refactored our frontend architecture."</p>
+            <footer class="testimonial__author">
+              <div class="testimonial__avatar">CT</div>
+              <div>
+                <cite class="testimonial__name">Sumedh Mohod</cite>
+                <span class="testimonial__role">Software Engineer</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Awards -->
+    <section class="certifications section section--light" id="certifications">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">07</span>
+          <h2 class="section__title">Certifications &amp; Awards</h2>
+        </div>
+
+        <h3 class="certs__subtitle reveal">Certifications</h3>
+        <div class="certs__grid">
+          <div class="cert-card">
+            <button class="cert-card__thumb" type="button" data-caption="Build Responsive Real World Websites with HTML5 and CSS3 — Udemy (2018)" aria-label="View HTML5 and CSS3 certificate">
+              <img src="assets/certs/HTML_CSS_Certificates.jfif" alt="HTML5 and CSS3 Responsive Websites certificate from Udemy">
+              <span class="cert-card__thumb-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/><path d="M11 8v6M8 11h6"/></svg>
+              </span>
+            </button>
+            <span class="cert-card__year">2018</span>
+            <h3>HTML5 &amp; CSS3 Responsive Websites</h3>
+            <p class="cert-card__issuer">Udemy · Jonas Schmedtmann</p>
+            <p class="cert-card__desc">12-hour course on building responsive, real-world websites with semantic HTML5, modern CSS3, Flexbox, and mobile-first layouts.</p>
+          </div>
+          <div class="cert-card">
+            <button class="cert-card__thumb" type="button" data-caption="Advanced CSS and Sass: Flexbox, Grid, Animations and More! — Udemy (2021)" aria-label="View Advanced CSS and Sass certificate">
+              <img src="assets/certs/Advance_CSS.jpg" alt="Advanced CSS and Sass certificate from Udemy">
+              <span class="cert-card__thumb-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/><path d="M11 8v6M8 11h6"/></svg>
+              </span>
+            </button>
+            <span class="cert-card__year">2021</span>
+            <h3>Advanced CSS &amp; Sass</h3>
+            <p class="cert-card__issuer">Udemy · Jonas Schmedtmann</p>
+            <p class="cert-card__desc">28-hour deep dive into Flexbox, CSS Grid, animations, Sass architecture, and advanced layout techniques for production UI.</p>
+          </div>
+          <div class="cert-card">
+            <button class="cert-card__thumb" type="button" data-caption="Front-End Domination — Sheryians Coding School (2025)" aria-label="View Front-End Domination certificate">
+              <img src="assets/certs/niraj_front_end_certificates.png" alt="Front-End Domination certificate of excellence from Sheryians Coding School">
+              <span class="cert-card__thumb-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/><path d="M11 8v6M8 11h6"/></svg>
+              </span>
+            </button>
+            <span class="cert-card__year">2025</span>
+            <h3>Front-End Domination</h3>
+            <p class="cert-card__issuer">Sheryians Coding School</p>
+            <p class="cert-card__desc">In-depth training in HTML, CSS, JavaScript, GSAP, React.js, Tailwind, Redux, and modern web development with design thinking.</p>
+          </div>
+          <div class="cert-card">
+            <button class="cert-card__thumb" type="button" data-caption="Simpleview CMS Certified Mentor — Granicus (2025)" aria-label="View Simpleview CMS Certified Mentor certificate">
+              <img src="assets/certs/niraj-sv-certificates.png" alt="Simpleview CMS Certified Mentor certificate from Granicus">
+              <span class="cert-card__thumb-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/><path d="M11 8v6M8 11h6"/></svg>
+              </span>
+            </button>
+            <span class="cert-card__year">2025</span>
+            <h3>Simpleview CMS Certified Mentor</h3>
+            <p class="cert-card__issuer">Granicus · Simpleview</p>
+            <p class="cert-card__desc">Certified mentor for Simpleview CMS — managing CMS-driven content, responsive front-end delivery, and platform best practices.</p>
+          </div>
+        </div>
+
+        <h3 class="certs__subtitle reveal">Awards &amp; Recognition</h3>
+        <div class="awards__grid">
+          <div class="award-card">
+            <button class="cert-card__thumb" type="button" data-caption="UpStar of the Month — Uplers (Continuous Improvement)" aria-label="View UpStar of the Month award">
+              <img src="assets/certs/upstar-uplers.jpg" alt="UpStar of the Month award from Uplers">
+              <span class="cert-card__thumb-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/><path d="M11 8v6M8 11h6"/></svg>
+              </span>
+            </button>
+            <span class="award-card__badge">Award</span>
+            <h3>UpStar of the Month</h3>
+            <p class="cert-card__issuer">Uplers</p>
+            <p class="cert-card__desc">Recognized for outstanding performance and continuous improvement — going the extra mile to deliver work beyond perfection.</p>
+          </div>
+          <div class="award-card">
+            <button class="cert-card__thumb" type="button" data-caption="UpStar Recognition — Uplers" aria-label="View UpStar recognition">
+              <img src="assets/certs/Niraj.jpg" alt="UpStar recognition graphic from Uplers">
+              <span class="cert-card__thumb-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/><path d="M11 8v6M8 11h6"/></svg>
+              </span>
+            </button>
+            <span class="award-card__badge">Recognition</span>
+            <h3>You Are the UpStar</h3>
+            <p class="cert-card__issuer">Uplers</p>
+            <p class="cert-card__desc">Internal recognition for exemplary commitment, inspiring the team through dedication and consistently high-quality delivery.</p>
+          </div>
+          <div class="award-card award-card--no-image">
+            <span class="award-card__badge">Award</span>
+            <h3>Top CSS Author</h3>
+            <p class="cert-card__issuer">DEV Community · 2024</p>
+            <p class="cert-card__desc">Recognized as a top CSS author on DEV for impactful articles on CSS tricks, snippets, and UI development best practices.</p>
+          </div>
+          <div class="award-card award-card--no-image">
+            <span class="award-card__badge">Award</span>
+            <h3>Top React Author</h3>
+            <p class="cert-card__issuer">DEV Community · 2024</p>
+            <p class="cert-card__desc">Awarded for top React tutorials including component patterns, hooks, and step-by-step UI development guides.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog section" id="blog">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">08</span>
+          <h2 class="section__title">Latest Articles</h2>
+        </div>
+        <p class="section__intro reveal">Technical writing on React UI, CSS, Tailwind, and frontend craft — published on DEV Community.</p>
+        <div class="blog__grid">
+          <article class="blog-card">
+            <span class="blog-card__date">Oct 22, 2024</span>
+            <h3 class="blog-card__title">10 CSS Code Snippets Every UI Developer Should Know</h3>
+            <p class="blog-card__excerpt">Battle-tested CSS snippets for layouts, animations, and UI patterns — 116 reactions from the developer community.</p>
+            <a href="https://dev.to/nnnirajn/10-css-code-snippets-every-ui-developer-should-know-2eb1" target="_blank" rel="noopener noreferrer" class="blog-card__link">
+              Read on DEV
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </article>
+          <article class="blog-card">
+            <span class="blog-card__date">Nov 19, 2024</span>
+            <h3 class="blog-card__title">10 CSS Tricks for UI Developers</h3>
+            <p class="blog-card__excerpt">Practical CSS techniques that save hours of development — from clever selectors to modern layout hacks.</p>
+            <a href="https://dev.to/nnnirajn/10-css-tricks-for-ui-developers-2l5" target="_blank" rel="noopener noreferrer" class="blog-card__link">
+              Read on DEV
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </article>
+          <article class="blog-card">
+            <span class="blog-card__date">Mar 13, 2025</span>
+            <h3 class="blog-card__title">9 Clever Tailwind Code Snippets for Faster Development</h3>
+            <p class="blog-card__excerpt">Copy-paste Tailwind utilities for rapid UI prototyping — responsive, accessible, and production-ready patterns.</p>
+            <a href="https://dev.to/nnnirajn/9-clever-tailwind-code-snippets-for-faster-development-53dc" target="_blank" rel="noopener noreferrer" class="blog-card__link">
+              Read on DEV
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </article>
+        </div>
+        <div class="blog__footer reveal">
+          <a href="https://dev.to/nnnirajn" target="_blank" rel="noopener noreferrer" class="btn btn--outline">See All on DEV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Certificate preview">
+      <div class="lightbox__backdrop" data-lightbox-close></div>
+      <div class="lightbox__dialog">
+        <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close preview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <figure class="lightbox__figure">
+          <img class="lightbox__img" src="" alt="">
+          <figcaption class="lightbox__caption"></figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Play Drums -->
+    <section class="drums section section--light" id="drums">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">09</span>
+          <h2 class="section__title">Play Drums</h2>
+        </div>
+        <p class="section__intro reveal">Take a quick break — tap the pads or use your keyboard to play a beat.</p>
+        <div class="drums__kit" id="drum-kit">
+          <button class="drum-pad drum-pad--crash" type="button" data-drum="crash" data-key="q" aria-label="Crash cymbal, key Q">
+            <span class="drum-pad__label">Crash</span>
+            <span class="drum-pad__key">Q</span>
+          </button>
+          <button class="drum-pad drum-pad--ride" type="button" data-drum="ride" data-key="w" aria-label="Ride cymbal, key W">
+            <span class="drum-pad__label">Ride</span>
+            <span class="drum-pad__key">W</span>
+          </button>
+          <button class="drum-pad drum-pad--hihat" type="button" data-drum="hihat" data-key="e" aria-label="Hi-hat, key E">
+            <span class="drum-pad__label">Hi-Hat</span>
+            <span class="drum-pad__key">E</span>
+          </button>
+          <button class="drum-pad drum-pad--tom-high" type="button" data-drum="tomHigh" data-key="r" aria-label="High tom, key R">
+            <span class="drum-pad__label">Tom H</span>
+            <span class="drum-pad__key">R</span>
+          </button>
+          <button class="drum-pad drum-pad--tom-mid" type="button" data-drum="tomMid" data-key="t" aria-label="Mid tom, key T">
+            <span class="drum-pad__label">Tom M</span>
+            <span class="drum-pad__key">T</span>
+          </button>
+          <button class="drum-pad drum-pad--tom-low" type="button" data-drum="tomLow" data-key="y" aria-label="Low tom, key Y">
+            <span class="drum-pad__label">Tom L</span>
+            <span class="drum-pad__key">Y</span>
+          </button>
+          <button class="drum-pad drum-pad--snare" type="button" data-drum="snare" data-key="a" aria-label="Snare, key A">
+            <span class="drum-pad__label">Snare</span>
+            <span class="drum-pad__key">A</span>
+          </button>
+          <button class="drum-pad drum-pad--kick" type="button" data-drum="kick" data-key="s" aria-label="Kick drum, key S">
+            <span class="drum-pad__label">Kick</span>
+            <span class="drum-pad__key">S</span>
+          </button>
+        </div>
+        <p class="drums__hint reveal">Keys: Q W E R T Y A S · Click any pad to start audio</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__inner reveal">
+          <div class="section__header">
+            <span class="section__number">10</span>
+            <h2 class="section__title">Let's Work Together</h2>
+          </div>
+          <p class="contact__text">
+            Looking for a senior UI developer for your next project, collaboration,
+            or technical writing? I'd love to connect.
+          </p>
+          <a href="mailto:narkhede400@gmail.com" class="contact__email">narkhede400@gmail.com</a>
+          <div class="contact__socials">
+            <a href="https://github.com/nnnirajn" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://in.linkedin.com/in/niraj-narkhede-ui-developer" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.062 2.062 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://dev.to/nnnirajn" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="DEV Community">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-2.2-.29-2.18zm-2.75.4h-.03l-.03 4.74.03.03h1.06c.53 0 .68-.02.9-.16.3-.2.33-.28.33-1.05 0-.7-.02-.82-.2-1-.18-.17-.45-.24-.9-.24zm-3.67.03c-.55 0-.69.02-.87.2-.18.18-.21.33-.21 1.04 0 .75.03.87.24 1.06.17.15.38.2 1 .2h.78l.02-2.12.03-2.18H1zM0 6.1v12.05L9.95 24h4.1l5-5.02V0H9.95L0 6.1zm17.33 10.93c-.17-.16-.53-.23-1.13-.23-.65 0-.87.07-1.07.27-.18.2-.25.42-.25 1.02 0 .89.24 1.31 1.09 1.45.57.1.97-.03 1.2-.4.1-.16.15-.42.15-1.02 0-.7-.05-.91-.24-1.09zM10 6.57v4.86l5.11.02c2.81.01 3.07-.01 3.51-.2.6-.27.96-.93.96-1.75 0-.63-.18-1.08-.58-1.42-.4-.32-.73-.4-2.39-.47l-1.67-.07V6.57H10z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Niraj Narkhede. Crafted with HTML, CSS &amp; JS.</p>
+      <a href="#home" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
