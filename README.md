@@ -24,4 +24,4 @@ https://nnnirajn.github.io/Portfolio-Website/
 1. I have added my blog link.
 
 ### Screenshots :
-Responsive Checker Link : https://ui.dev/amiresponsive?url=https://nnnirajn.github.io/intraedge.github.io/
+Responsive Checker Link : https://ui.dev/amiresponsive?url=https://nnnirajn.github.io/Portfolio-Website/
